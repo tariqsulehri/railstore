@@ -1,0 +1,16 @@
+<% if notice %>
+  <aside id="notice"> <%= notice %> </aside>
+<% end %>
+
+<strong>Product:</strong>
+
+<ul>
+  <% @cart.line_items.each |item| %> 
+    <li>  
+      <%= @line_item.product_id %>
+    </li>  
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_line_item_path(@line_item) %> |
+<%= link_to 'Back', line_items_path %>
