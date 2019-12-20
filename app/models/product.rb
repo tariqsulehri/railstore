@@ -21,5 +21,4 @@ class Product < ApplicationRecord
               throw :abort
           end
        end
-
 end

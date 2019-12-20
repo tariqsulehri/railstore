@@ -28,7 +28,7 @@ class LineItemsController < ApplicationController
   def create
     # return render json: params
     product = Product.find(params[:product_id])
-    # return render json: product
+      
     @line_item = @cart.add_product(product)
     
     respond_to do |format|

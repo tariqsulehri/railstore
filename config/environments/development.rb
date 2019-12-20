@@ -9,6 +9,20 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  #config.action_mailer.delivery_method = :smtp
+  Railstore::Application.configure do
+      config.action_mailer.delivery_method = :smtp
+      config.action_mailer.smtp_settings = {
+        address:"smtp.googlemail.com",
+        port:465,
+        #domain:"www.gmail.com",
+        authentication: "plain",
+        user_name:"tariq.sulehri@khaleef.com",
+        password:"786Allahis1",
+        enable_starttls_auto: true
+      }
+  end
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
