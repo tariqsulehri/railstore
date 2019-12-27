@@ -1,12 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 one:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  title: Programming C++
+  description: Object orientred proramming in c++
+  image_url: logo.png
+  price: 1.26
 
 two:
-  title: MyString
-  description: MyText
-  image_url: MyString
+  title: Programming React
+  description: Component based programming in react
+  image_url: test1.jpg
   price: 9.99
+
+ruby:
+  title: Progrmming Ruby
+  description: 
+    Ruby is the fastest growing and most exciting dynamic
+    language out there. If you need to get working programs
+    delivered fast, you should add Ruby to your toolbox.
+  price: 49.50
+  image_url: logo.png
